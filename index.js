@@ -70,6 +70,9 @@ products.forEach(product => {
       total += Number(product.price)
       totalPrice.textContent = `$${total.toFixed(2)}`
 
+      document.getElementById("cartContent").style.display = "flex"
+      document.getElementById("pageContent").style.width = "75rem"
+
       remove.onclick = function(){
          previewItem.innerHTML = ""
          total -= Number(product.price)
@@ -86,12 +89,12 @@ products.forEach(product => {
 
 function showCart(){
    document.getElementById("cartContent").style.display = "flex"
-   document.getElementById("pageContent").style.width = "1200px"
+   document.getElementById("pageContent").style.width = "75rem"
 }
 
 function closeCart(){
    document.getElementById("cartContent").style.display = "none"
-   document.getElementById("pageContent").style.width = "1500px"
+   document.getElementById("pageContent").style.maxWidth = "90rem"
 }
 
 
