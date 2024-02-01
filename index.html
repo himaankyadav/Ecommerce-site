@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>E commerce example</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="https://kit.fontawesome.com/51501b8cb5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="pageContent">
+      <div id="header">
+         <h1>LOGO</h1>
+         <div id="cart">
+            <button onclick="showCart()" id="cartIcon"><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></button>
+         </div>
+      </div>
+      <div id="products">
+
+      </div>
+   </div>
+
+   <div id="cartContent">
+      <button id="close" onclick="closeCart()">Close Cart</button>
+      <h1 id="cartHeading">Your Cart:</h1>
+
+      <div id="cartPreview">
+         
+      </div>
+
+      <h3 id="total">Total: <div id="totalPrice">0</div></h3>
+   </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
